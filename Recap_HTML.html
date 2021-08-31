@@ -1,0 +1,292 @@
+<!-- DOCTYPE de base --> <!--html+TAB -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ecrire une description en rapport">
+	<title>Titre</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<link rel="stylesheet" href="autre_lien_css.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Titre du header</h1>
+		<p>Description du header</p>
+	</header>
+
+	<main class="main container">
+	</main>
+
+	<footer class="footer">
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-------- DEF -------->
+HyperText Markup Language
+
+<!-------- Paragraphes -------->
+<p></p>
+
+<!-------- Préformaté -------->
+<pre></pre>
+
+<!-------- Div -------->
+<div></div>
+
+<!-------- Gras -------->
+<strong></strong>
+
+<!-------- Italique -------->
+<em></em>
+
+<!-------- Lien -------->
+<a href="#"></a>
+
+<!-------- Image -------->
+<img src="" alt="">
+
+<!-------- Exposants -------->
+<sub></sub>
+<sup></sup>
+
+<!-------- Saut de ligne après paragraphe -------->
+<br>
+
+<!-------- Inséré -------->
+<ins></ins>
+
+<!-------- Supprimé -------->
+<del></del>
+
+<!-------- Code -------->
+<code></code>
+
+<!-------- Span : inline -------->
+<span></span>
+
+<!-------- Bloc de citation -------->
+<blockquote></blockquote>
+
+<!-------- Citation inline -------->
+<q></q>
+
+<!-------- Auteur de citation -------->
+<cite></cite>
+
+<!-------- Liste non ordonnée -------->
+<ul>
+	<li></li>
+</ul>
+
+<!-------- Liste ordonnée -------->
+<ol>
+	<li></li>
+</ol>
+
+<!-------- Liste de définition -------->
+<dl>
+	<dt>Terme 1</dt>
+	<dd>Définition 1</dd>
+	<dt>Terme 2</dt>
+	<dd>Définition 2</dd>
+</dl>
+
+<!-------- Tableau -------->
+<table>
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+		</tr>
+	</tfoot>
+</table>
+
+<!--------- Fusionner des cases  -------->
+<td rowspan="2">Fusion de 2 cases verticalement</td>">
+
+<!-------- Balises Sémantiques -------->
+<body>
+	<header>
+		<nav></nav>
+	</header>
+	<article>
+		<figure>
+			<figcaption></figcaption>
+		</figure>
+		<time></time>
+		<mark></mark>
+		<aside></aside>
+	</article>
+	<section></section>
+	<footer></footer>
+</body>
+
+<!-------- FORMULAIRE -------->
+<form action="index.php" method="post">
+	<fieldset>
+		<legend>Titre du groupe de champs</legend>
+	</fieldset>
+	/<!--initial-->
+	<input type="text" name="city">
+	<!--avec valeur-->
+	<input type="text" name="city" value="Paris">
+	<!--champ obligatoire-->
+	<input type="text" name="city" required>
+	
+	<!--autres attributs-->
+	<!--readonly, disabled, placeholder, minlength, maxlength, tabindex, autofocus, min, max, step -->
+	
+	<!--autres types-->
+	<!--text, password, radio, checkbox, file, hidden, search, number, range, color, date, email, url, tel-->
+	
+	<!--bouton radio-->
+	<label><input type="radio" name="color" value="r">Rouge</label>
+	<label><input type="radio" name="color" value="g">Vert</label>
+	<label><input type="radio" name="color" value="b" checked>Bleu</label>
+	
+	<!--checkbox-->
+	<label><input type="checkbox" name="colors[r]" value="1">Rouge</label>
+	<label><input type="checkbox" name="colors[g]" value="1"
+	checked>Vert</label>
+	<label><input type="checkbox" name="colors[b]" value="1"
+	checked>Bleu</label>
+
+
+	<!--textarea-->
+	<textarea name="name" placeholder="Veuillez saisir votre
+	adresse"></textarea>
+	
+	<!--select-->
+	<select name="panier">
+		<option value="fraises">Fraises</option>
+		<option value="bananes">Bananes</option>
+		<option value="carottes" selected>Carottes</option>
+		<option value="navets">Navets</option>
+	</select>
+	
+	<!--select avec groupes-->
+	<select name="panier" multiple size="3">
+		<optgroup label="Fruits">
+			<option value="fraises">Fraises</option>
+			<option value="bananes" selected>Bananes</option>
+		</optgroup>
+		<optgroup label="Légumes">
+			<option value="carottes" selected>Carottes</option>
+			<option value="navets">Navets</option>
+		</optgroup>
+	</select>
+	
+	<!--bouton-->
+	<button type="submit">Envoyer les informations</button>
+	<!--autres types de boutons : submit, button, reset-->
+	
+</form>
+
+<!--Pour des fichiers :-->
+<form action="contact.php" method="post" enctype="multipart/form-data">
+...
+</form>
+
+
+
+
+
+<!-- ------ Mettre une ancre vide, ou une ancre sur un endroit du HTML ------ -->
+<a href="#test">Lien vide</a>
+<p class="#test"></p>
+
+
+<!-- ------ Ouvrir un nouvel onglet en cliquant sur le lien ------ -->
+<a href="lien.com" target="_blank">Lien</a>
+
+
+
+<!-- ------ Mettre plusieurs CLASS ------ -->
+<p class =" première_class deuxième_class"></p>
+
+
+
+<!-- ------ HR / Barre ------ -->
+<hr width="50%" color="#CB8606"></hr>
+
+
+
+
+
+<!-------- VIDEO -------->
+
+<iframesrc="//player.vimeo.com/video/11386048?portrait=0&amp;color=8BA0FF"width="500" height="281" frameborder="0" webkitallowfullscreenmozallowfullscreen allowfullscreen></iframe>
+
+<video src="media/intro.webm" controls>    Votre navigateur ne prend pas en charge les vidéos HTML5,    merci d'utiliser un navigateur plus récent.</video>
+
+<video controls>    <source src="media/intro.webm" type="video/webm">    <source src="media/intro.mp4" type="video/mp4">    Votre navigateur ne prend pas en charge les vidéos HTML5,    merci d'utiliser un navigateur plus récent.</video>
+
+<video width="480" height="320" poster="poster.jpg" preload="auto"autoplay controls loop muted>    <source src="media/intro.webm" type="video/webm">    <source src="media/intro.mp4" type="video/mp4">    Votre navigateur ne prend pas en charge les vidéos HTML5,    merci d'utiliser un navigateur plus récent.</video>
+
+
+
+
+
+<!-------- AUDIO -------->
+
+<video preload="auto" autoplay controls loop muted>    <source src="media/musique.ogg" type="audio/ogg">    <source src="media/musique.mp3" type="audio/mp3">    Votre navigateur ne prend pas en charge l'audio HTML5,    merci d'utiliser un navigateur plus récent.</video>
+
+
+
+
+
+<!-------- GRID/BOOTSTRAP -------->
+
+<h1 class="text-center m-5">Bootstrap 4</h1>
+<h2 class="text-center m-5">Le Responsive</h2>
+<h2 class="col-12 bg-danger text-white d-sm-none">Titre affiché uniquement sur mobile</h2>
+<h2 class="col-12 col-md-12 bg-dark text-white d-lg-none">Titre affiché uniquement sur mobile et tablette</h2>
+<h2 class="col-lg-12 bg-info text-white d-none d-lg-block">Titre affiché uniquement sur Desktop</h2>
+<section class="row">
+    <article class="col-12 col-md-6 col-lg-3 border border-warning">
+        <h3>Mon article</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illo ex voluptatem ab at veritatis accusantium nam aperiam maiores recusandae.</p>
+        <p><a href="#">En savoir +</a></p>
+    </article>
+
+
+
+
+<!-- ------ IMAGES ------ -->
+
+SVG : permet de ne pas perdre en qualité de l'image même en touchant aux propriétés width et height
+
+
+
+
+
+<!-------- OPEN GRAPH -------->
+
+//dans le header, dans les métas
+//meilleur expérience utilisateur, apporte plus de clicks
+//dans le contexte des partages sur les réseaux sociaux
+//on définie un à un les éléments du partage, le titre, la miniature, le résumé etc ...
+
+
+
+
+
+<!-------- SEO -------->
+
+//Référencement
